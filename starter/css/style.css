@@ -18,6 +18,21 @@ h6 {
   margin: 0;
 }
 
-p {
+/* p {
   margin: 0;
+} */
+
+/* Header, nav-bar and navigation-menu properties */
+#nav-bar {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 5%;
 }
+
+#navigation-menu {
+  display: flex;
+  width: 50%;
+  align-items: end;
+  justify-content: flex-end;
+}
+
