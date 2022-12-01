@@ -2,9 +2,9 @@
 My Portfolio
 
 ## Description
-
+Work in progress.
 ## Installation
-
+N/A
 ## Usage
 
 ## Credits
