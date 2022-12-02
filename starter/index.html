@@ -11,38 +11,58 @@
 
 <body>
   <!-- main logo / nav -->
-  <header>
-    <nav id="nav-bar">
-      <h1>Chris Southon</h1>
-      <div id="navigation-menu">
-          <p>About Me</p>
-          <p>Work</p>
-          <p>Contact Me</p>
-      </div>
-    </nav>
-  </header>
+  <nav id="nav-bar">
+    <h1>Chris Southon</h1>
+    <div id="navigation">
+      <p><a href="#aboutMe">About Me</a></p>
+      <p><a href="#work-section">Work</a></p>
+      <p><a href="#contactMe">Contact Me</a></p>
+    </div>
+    
+  </nav>
 
   <!-- hero banner -->
   <section class="hero-banner">
     <div>
-      <h2>Welcome to my portfolio!</h2>
+      <h2 class="sub-heading">Welcome to my portfolio!</h2>
     </div>
+    
   </section>
 
   <main class="page-wrapper">
     <!-- about me -->
     <section class="page-section" id="about">
-      <h2>About Me</h2>
+      <h2 id="aboutMe">About Me</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ipsum accusamus id natus harum. Recusandae fuga aspernatur sapiente quam officia ipsa, voluptate voluptates nam odit amet quos, aliquam eius perferendis.</p>
+
     </section>
 
     <!-- portfolio container -->
     <section class="page-section" id="work">
-      <h2>Work</h2>
+      <h2 id="work-section">Work</h2>
+    </section>
+
+    <section id="work-grid">
+      <div id="study-guide" class="work-grid-area">
+        <div class="work-heading">Study Guide</div>
+      </div>
+      <div id="assignment1" class="work-grid-area">
+        <div class="work-heading">Horiseon Assignment</div>
+      </div>
+      <div id="css-cheatsheet" class="work-grid-area">
+        <div class="work-heading">CSS Cheatsheet</div>
+      </div>
+      <div id="coming-soon" class="work-grid-area">
+        <div class="work-heading">Coming Soon</div>
+      </div>
+      <div id="coming-soon" class="work-grid-area">
+        <div class="work-heading">Coming Soon</div>
+      </div>
     </section>
 
     <!-- contact -->
     <section class="page-section contact" id="contact">
-      <h2>Contact Me</h2>
+      <h2 id="contactMe">Contact Me</h2>
     </section>
   </main>
 </body>

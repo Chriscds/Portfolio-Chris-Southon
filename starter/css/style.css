@@ -7,20 +7,21 @@ body {
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
+  background-color: rgba(160, 160, 160, 0.266);
 }
 
-h1,
+
 h2,
 h3,
 h4,
 h5,
 h6 {
-  margin: 0;
+  margin: 15px;
 }
 
-/* p {
-  margin: 0;
-} */
+p {
+  margin: 25px;
+}
 
 /* Header, nav-bar and navigation-menu properties */
 #nav-bar {
@@ -28,11 +29,78 @@ h6 {
   flex-direction: row;
   margin: 0px 5%;
 }
+#nav-bar h1 {
+  width: 25%;
+  font-weight: 500;
 
-#navigation-menu {
+}
+#navigation {
   display: flex;
   width: 50%;
-  align-items: end;
-  justify-content: flex-end;
+  align-items: center;
+  justify-content: space-evenly;
 }
+#navigation p a{
+  color: rgb(75, 51, 105);
+  cursor: pointer;
+  text-decoration: none underline;
+}
+
+.sub-heading {
+  text-align: center;
+  background-color: rgba(0, 255, 255, 0.157);
+  margin: ;
+}
+
+#work-grid {
+  margin: 0px 5%;
+  display: grid;
+  grid-template-rows: 300px 300px 300px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 25% 50% 25%;
+  grid-template-areas: 
+  "study-guide assignment1 coming-soon"
+  "coming-soon coming-soon css-cheatsheet"
+  "coming-soon coming-soon css-cheatsheet"
+  ;
+}
+
+#study-guide {
+  grid-area: "study-guide";
+  background-image: url(../images/02-portfolio-1.jpg);
+}
+
+#assignment1 {
+  grid-area: "assignment1";
+  background-image: url(../images/02-portfolio-2.jpg);
+}
+
+#css-cheatsheet {
+  grid-area: "css-cheatsheet";
+  background-image: url(../images/02-portfolio-1.jpg);
+}
+
+#coming-soon {
+  grid-area: "coming-soon";
+  background-image: url(../images/02-portfolio-4.jpg);
+}
+
+.work-grid-area {
+  display: grid;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-content: end;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.work-heading {
+  background-color: rgba(255,255,255,0.5);
+  color: black;
+  height: 25px;
+  padding: 1px;
+  font-size: 18px;
+}
+
 
