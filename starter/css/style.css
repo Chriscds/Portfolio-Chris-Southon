@@ -157,8 +157,8 @@ p {
   background-color: rgba(55, 52, 52, 0.447);
   color: rgb(194, 192, 192);
   height: 25px;
-  margin-right: 4px;
-  padding: 1px;
+  /* margin-right: px; */
+  padding-right: 8px;
   font-size: 18px;
   text-align: end;
   
