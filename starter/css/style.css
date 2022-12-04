@@ -7,7 +7,7 @@ body {
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
-  background-color: rgba(160, 160, 160, 0.702);
+  background-color: rgba(208, 208, 208, 0.702);
 }
 
 
@@ -63,10 +63,12 @@ p {
   color: black ;
   cursor: pointer;
   text-decoration: none underline;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 
-
+/* sub-heading */
 
 .sub-heading {
   display: flex;
@@ -74,21 +76,92 @@ p {
   justify-content: center;
   height: 60px;
   background-color:rgba(81, 128, 204, 0.654);
+  margin-top: 30px;
   margin: 5 auto;
   border-radius: 5px;
 }
 
-/
+/* about me section */
+
+#about {
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+
+#aboutMe, #contactMe{
+  margin-left: 26px;
+}
+#aboutMe, #work-header, #contactMe {
+  text-decoration: underline;
+}
+
+/* portfolio */
+
+.wrapper {
+  margin: 0px 5%;
+  display: grid;
+  grid-template-columns: 0.3fr 1fr 1fr;
+  grid-template-rows: 100px 300px 300px 100px;
+  margin: 15px;
+  grid-template-areas: 
+  "work-section work-1 work-1"
+  "work-section work-1 work-1"
+  "work-section work-2 work-3"
+  "work-section work-2 work-3"
+  "work-section work-4 work-4"
+  "work-section work-4 work-4"
+
+  ;
+}
+
+.work-section {
+  grid-area: work-section;
+  border-right: 2px dashed;
+}
+
+#work-1 {
+  grid-area: work-1;
+  background-image: url(../images/CSS-Cheatsheet.png);
+}
+
+#work-2 {
+  grid-area: work-2;
+  background-image: url(../images/02-hero-bg.jpg);
+
+}
+
+#work-3 {
+  grid-area: work-3;
+  background-image: url(../images/02-portfolio-2.jpg);
+
+}
+
+#work-4 {
+  grid-area: work-4;
+  background-image: url(../images/02-portfolio-2.jpg);
+  height: 300px;
+}
+
+.portfolio-section {
+  display: grid;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  align-content: end;
+}
 
 .work-heading {
-  background-color: rgba(255,255,255,0.5);
-  color: black;
+  background-color: rgba(55, 52, 52, 0.447);
+  color: rgb(194, 192, 192);
   height: 25px;
+  margin-right: 4px;
   padding: 1px;
   font-size: 18px;
   text-align: end;
+  
 }
 
-#aboutMe, #work-section, #contactMe {
-  text-decoration: underline;
-}
+
