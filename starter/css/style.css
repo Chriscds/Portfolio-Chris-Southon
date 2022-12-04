@@ -7,7 +7,7 @@ body {
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
-  background-color: rgba(160, 160, 160, 0.266);
+  background-color: rgba(160, 160, 160, 0.702);
 }
 
 
@@ -72,9 +72,10 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 50px;
-  background-color: rgba(38, 183, 183, 0.508);
+  height: 60px;
+  background-color:rgba(81, 128, 204, 0.654);
   margin: 5 auto;
+  border-radius: 5px;
 }
 
 /* work grid */
@@ -85,10 +86,10 @@ p {
   grid-template-rows: 300px 300px 300px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-columns: 25% 50% 25%;
-  /* grid-template-areas:  */
-  /* "study-guide assignment1 coming-soon"
+  grid-template-areas: 
+  "study-guide assignment1 coming-soon"
   "coming-soon coming-soon css-cheatsheet"
-  "coming-soon coming-soon css-cheatsheet" */
+  "coming-soon coming-soon css-cheatsheet"
   ; 
   /* WHY IS THIS NOT WORKING ? */
 }
@@ -106,7 +107,6 @@ p {
 #css-cheatsheet {
   grid-area: "css-cheatsheet";
   background-image: url(../images/CSS-Cheatsheet.png);
-  
 }
 
 #coming-soon {
@@ -122,6 +122,7 @@ p {
   align-content: end;
   margin: 5px;
   cursor: pointer;
+  border-radius: 4px;
 }
 
 .work-heading {
