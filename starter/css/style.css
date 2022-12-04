@@ -23,46 +23,74 @@ p {
   margin: 25px;
 }
 
-/* Header, nav-bar and navigation-menu properties */
-#nav-bar {
-  display: flex;
-  flex-direction: row;
-  margin: 0px 5%;
+/* test grid */
+.grid {
+  display: grid;
+  /* height: 100%; */
+  grid-template-columns: 1fr 1fr 1fr ;
+  grid-template-rows: 1fr ;
+  grid-template-areas: 
+    "t-image space nav-title "
+  ;
 }
-#nav-bar h1 {
-  width: 25%;
-  font-weight: 500;
 
+.space {
+  grid-area: space;
 }
-#navigation {
+
+.title-image {
   display: flex;
-  width: 50%;
+  grid-area: t-image;
+  justify-content: center;
   align-items: center;
-  justify-content: space-evenly;
 }
-#navigation p a{
-  color: rgb(75, 51, 105);
+
+.avatar {
+  margin: 25px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.nav-title {
+  display: flex;
+  grid-area: nav-title;
+  justify-content: flex-end;
+  align-items: center;
+  }
+
+.nav-title p a {
+  color: black ;
   cursor: pointer;
   text-decoration: none underline;
 }
 
+
+/* end of test */
+
 .sub-heading {
-  text-align: center;
-  background-color: rgba(0, 255, 255, 0.157);
-  margin: ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  background-color: rgba(38, 183, 183, 0.508);
+  margin: 5 auto;
 }
 
+/* work grid */
 #work-grid {
   margin: 0px 5%;
   display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
   grid-template-rows: 300px 300px 300px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-columns: 25% 50% 25%;
-  grid-template-areas: 
-  "study-guide assignment1 coming-soon"
+  /* grid-template-areas:  */
+  /* "study-guide assignment1 coming-soon"
   "coming-soon coming-soon css-cheatsheet"
-  "coming-soon coming-soon css-cheatsheet"
-  ;
+  "coming-soon coming-soon css-cheatsheet" */
+  ; 
+  /* WHY IS THIS NOT WORKING ? */
 }
 
 #study-guide {
@@ -77,12 +105,13 @@ p {
 
 #css-cheatsheet {
   grid-area: "css-cheatsheet";
-  background-image: url(../images/02-portfolio-1.jpg);
+  background-image: url(../images/CSS-Cheatsheet.png);
+  
 }
 
 #coming-soon {
   grid-area: "coming-soon";
-  background-image: url(../images/02-portfolio-4.jpg);
+  background-image: url(../images/02-portfolio-3.jpg);
 }
 
 .work-grid-area {
@@ -101,6 +130,7 @@ p {
   height: 25px;
   padding: 1px;
   font-size: 18px;
+  text-align: end;
 }
 
 
