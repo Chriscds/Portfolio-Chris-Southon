@@ -23,7 +23,7 @@ p {
   margin: 25px;
 }
 
-/* test grid */
+/* navigation grid and avatar */
 .grid {
   display: grid;
   /* height: 100%; */
@@ -66,7 +66,7 @@ p {
 }
 
 
-/* end of test */
+
 
 .sub-heading {
   display: flex;
@@ -78,52 +78,7 @@ p {
   border-radius: 5px;
 }
 
-/* work grid */
-#work-grid {
-  margin: 0px 5%;
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-rows: 300px 300px 300px;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-columns: 25% 50% 25%;
-  grid-template-areas: 
-  "study-guide assignment1 coming-soon"
-  "coming-soon coming-soon css-cheatsheet"
-  "coming-soon coming-soon css-cheatsheet"
-  ; 
-  /* WHY IS THIS NOT WORKING ? */
-}
-
-#study-guide {
-  grid-area: "study-guide";
-  background-image: url(../images/02-portfolio-1.jpg);
-}
-
-#assignment1 {
-  grid-area: "assignment1";
-  background-image: url(../images/02-portfolio-2.jpg);
-}
-
-#css-cheatsheet {
-  grid-area: "css-cheatsheet";
-  background-image: url(../images/CSS-Cheatsheet.png);
-}
-
-#coming-soon {
-  grid-area: "coming-soon";
-  background-image: url(../images/02-portfolio-3.jpg);
-}
-
-.work-grid-area {
-  display: grid;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  align-content: end;
-  margin: 5px;
-  cursor: pointer;
-  border-radius: 4px;
-}
+/
 
 .work-heading {
   background-color: rgba(255,255,255,0.5);
@@ -134,4 +89,6 @@ p {
   text-align: end;
 }
 
-
+#aboutMe, #work-section, #contactMe {
+  text-decoration: underline;
+}
