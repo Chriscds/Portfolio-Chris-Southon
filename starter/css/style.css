@@ -67,7 +67,6 @@ p {
   font-weight: bold;
 }
 
-
 /* sub-heading */
 
 .sub-heading {
@@ -164,5 +163,22 @@ p {
 
 #coming-soon {
   background-image: url("../images/02-portfolio-3.jpg")
+}
+
+/* footer and contact me */
+
+#contactList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#contactMe ul, li, a{
+  text-decoration: none;
+  color: black;
+}
+
+#contact {
+  margin-bottom: 120px;
 }
 
