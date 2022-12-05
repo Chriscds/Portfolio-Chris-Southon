@@ -67,6 +67,10 @@ p {
   font-weight: bold;
 }
 
+.nav-title:hover p a {
+  box-shadow: 0 5px 2px rgba(232, 102, 236, 0.9)
+}
+
 /* sub-heading */
 
 .sub-heading {
@@ -116,6 +120,10 @@ p {
   text-align: end;
 }
 
+.grid-item:hover {
+  box-shadow: 0 5px 2px rgba(232, 102, 236, 0.9)
+}
+
 /* CSS Cheatsheet */
 .item-1 {
   grid-column: 1 / 3;
@@ -141,7 +149,7 @@ p {
 }
 
 .heading {
-  background-color: rgba(0, 0, 0, 0.229);
+  background-color: rgba(0, 0, 0, 0.593);
   padding: 15px;
   /* height: 25px; */
   color: white;
@@ -154,11 +162,11 @@ p {
 }
 
 #horiseon {
-  background-image: url("../images/02-hero-bg.jpg");
+  background-image: url("../images/Horiseon.png");
 }
 
 #study-guide {
-  background-image: url("../images/02-portfolio-1.jpg")
+  background-image: url("../images/Prework-studu-guide.png")
 }
 
 #coming-soon {
