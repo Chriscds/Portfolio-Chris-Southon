@@ -7,7 +7,7 @@ body {
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
-  background-color: rgba(208, 208, 208, 0.702);
+  background-color: rgba(190, 189, 189, 0.702);
 }
 
 
@@ -67,8 +67,17 @@ p {
   font-weight: bold;
 }
 
-.nav-title:hover p a {
-  box-shadow: 0 5px 2px rgba(232, 102, 236, 0.9)
+.nav-about:hover  {
+  box-shadow: 0 4px 2px rgba(79, 165, 222, 0.9);
+  transition: .3s ease-in-out;
+}
+.nav-work:hover  {
+  box-shadow: 0 4px 2px rgba(79, 165, 222, 0.9);
+  transition: .3s ease-in-out;
+}
+.nav-contact:hover  {
+  box-shadow: 0 4px 2px rgba(79, 165, 222, 0.9);
+  transition: .3s ease-in-out;
 }
 
 /* sub-heading */
@@ -79,6 +88,10 @@ p {
   justify-content: center;
   height: 60px;
   background-color:rgba(81, 128, 204, 0.654);
+  background-image: linear-gradient(
+    rgba(232, 102, 236, 0.3) 0%,
+    rgba(232, 102, 236, 0.6) 100%
+  );
   margin-top: 30px;
   margin: 5 auto;
   border-radius: 5px;
@@ -118,10 +131,6 @@ p {
   display: grid;
   align-content: end;
   text-align: end;
-}
-
-.grid-item:hover {
-  box-shadow: 0 5px 2px rgba(232, 102, 236, 0.9)
 }
 
 /* CSS Cheatsheet */
@@ -173,20 +182,50 @@ p {
   background-image: url("../images/02-portfolio-3.jpg")
 }
 
+#cheat-sheet:hover  {
+  opacity: 0.7;
+  transition: all 0.5s ease-in-out;}
+
+
+#horiseon:hover  {
+  opacity: 0.5;
+  transition: all 0.5s ease-in-out;
+}
+#study-guide:hover  {
+  opacity: 0.5;
+  transition: all 0.5s ease-in-out;
+}
+#coming-soon:hover  {
+  opacity: 0.5;
+  transition: all 0.5s ease-in-out;
+}
+#coming-soon:hover  {
+  opacity: 0.5;
+  transition: all 0.5s ease-in-out;
+}
+
 /* footer and contact me */
 
 #contactList {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 18px;
+  padding-bottom: 120px;
+}
+
+#contactMe {
+  padding-top: 60px;
+  color: rgb(200, 200, 200);
 }
 
 #contactMe ul, li, a{
   text-decoration: none;
-  color: black;
+  color: rgb(200, 200, 200);
 }
 
 #contact {
-  margin-bottom: 120px;
+  background-color: rgba(45, 55, 65, 0.8);
+  margin-bottom: 10px;
 }
 
