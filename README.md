@@ -7,7 +7,7 @@ Clicking on selected areas within the page will take you to the relevant web app
 ## Installation
 N/A
 ## Usage
-You can view my portfolio webpage here [Chris Southon Portfolio]()
+You can view my portfolio webpage here: [Chris Southon Portfolio](https://chriscds.github.io/Portfolio-Chris-Southon/starter/)
 ## Credits
 N/A
 ## License
